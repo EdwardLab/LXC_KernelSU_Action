@@ -190,6 +190,7 @@ jobs:
         else
             make -j$(nproc --all) CC=clang O=out ARCH=${{ env.ARCH }} ${{ env.CUSTOM_CMDS }} ${{ env.EXTRA_CMDS }} CROSS_COMPILE=aarch64-linux-android- CROSS_COMPILE_ARM32=arm-linux-androideabi- KCFLAGS="-Wno-error"
         fi
+
   
 
     - name: Check a kernel output files
